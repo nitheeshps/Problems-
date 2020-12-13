@@ -1,0 +1,21 @@
+class Solution {
+public:
+    int numJewelsInStones(string J, string S) {
+        
+        int count=0,i,j;
+        
+        for(i=0;i<J.size();i++)
+        {
+            for(j=0;j<S.size();j++)
+            {
+                if (J[i]==S[j])
+                           {
+                            count++;   
+                           }
+            }
+        }
+        
+        return count;
+        
+    }
+};
